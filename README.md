@@ -53,6 +53,12 @@ Em acréscimo a leitura dos capítulos abaixo, você pode praticar o conheciment
 # Capítulo 1: Construindo abstrações com funções
 
 ## 1.1 Começando
+Ciência da computação é uma disciplina acadêmica ampla. Ela contempla areas de sistemas distribuídos, inteligência artificial, robótica, gráfica, segurança, computação científica, arquitetura de computadores e dezenas de subcampos emergentes que se expandem com novas técnicas e descobertas a cada ano. O rápido progresso da ciência da computação tem deixado poucos aspectos da vida humana sem alteração. Comércio, comunicação, ciência, arte, lazer e política foram todos reinventados como domínios computacionais.
+
+A alta produtividade da ciência da computação somente é possível por conta do conjunto elegante e poderoso de ideias fundamentais em que a disciplina é construída. Toda computação começa representando informação, especificando lógica para processá-la e construindo abstrações que gerenciam a complexidade dessa lógica. Dominar esses fundamentos requer de nós entender precisamente como computadores interpreta programas de computadores e executa processos computacionais.
+
+Essas ideais fundamentais vem sendo ensinadas por muito tempo pelo livro texto clássico _Structure and Interpretation of Computer Programs_ (SICP) pelo Harold Abelson e Gerald Jay Sussman com Julie Sussman. Este texto empresta fortemente as ideias do SICP, o qual os autores originais gentilmente licenciaram para adaptação e reuso com a licença Creative Commons. Essas notas foram publicadas com a licença de compartilhamento não comercial Creative Commons na versão 3.
+
 ## 1.2 Elementos da programação
 ## 1.3 Definindo novas funções
 ## 1.4 Elaborando funções
