@@ -65,7 +65,9 @@ Essas ideais fundamentais vem sendo ensinadas por muito tempo pelo livro texto c
 
 Com o objetivo de definir processos computacionais, precisamos de uma linguagem de programação e de preferência uma que tanto humanos quanto uma grande variedade de computadores podem entender. Neste texto, vamos trabalhar primariamente com a linguagem Python.
 
-Python é uma linguagem de programação amplamente utilizada que possui entusiastas recrutados de diferentes profissões: programadores web, engenheiros de jogos, cientistas, acadêmicos e até designers de novas linguagens de programação. Quando você aprende Python, você se junta a uma comunidade forte de milhões de desenvolvedores. Comunidades de desenvolvedores são instituições de extrema importância: membros ajudam uns aos outros para resolver problemas, compartilham projetos, experiências e desenvolvem software e ferramentas coletivamente. Membros dedicados frequentemente alcançam a celebridade e 
+Python é uma linguagem de programação amplamente utilizada que possui entusiastas recrutados de diferentes profissões: programadores web, engenheiros de jogos, cientistas, acadêmicos e até designers de novas linguagens de programação. Quando você aprende Python, você se junta a uma comunidade forte de milhões de desenvolvedores. Comunidades de desenvolvedores são instituições de extrema importância: membros ajudam uns aos outros para resolver problemas, compartilham projetos, experiências e desenvolvem software e ferramentas coletivamente. Membros dedicados frequentemente alcançam a celebridade e uma estima distribuída por suas contribuições.
+
+A linguagem de programação Python em si é um produto de uma grande comunidade voluntária que se orgulha da diversidade de seus contribuidores. A linguagem foi concebida e implementada primeiramente por Guido Van Rossum  no final dos anos 80. O primeiro capítulo do tutorial dele sobre Python 3 explica a razão do Python ser tão popular, apesar da grande variedade de linguagens disponíveis atualmente.
 
 
 ## 1.2 Elementos da programação
