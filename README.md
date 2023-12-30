@@ -69,6 +69,11 @@ Python é uma linguagem de programação amplamente utilizada que possui entusia
 
 A linguagem de programação Python em si é um produto de uma grande comunidade voluntária que se orgulha da diversidade de seus contribuidores. A linguagem foi concebida e implementada primeiramente por Guido Van Rossum  no final dos anos 80. O primeiro capítulo do tutorial dele sobre Python 3 explica a razão do Python ser tão popular, apesar da grande variedade de linguagens disponíveis atualmente.
 
+Python se destaca como uma linguagem instrucional, pois, através de sua história, desenvolvedores Python tem enfatizado a interpretabilidade humana do código Python, reforçado pelos princípios de beleza, simplicidade e legibilidade do [Zen of Python](http://www.python.org/dev/peps/pep-0020/). Python é particularmente apropriada para este texto, uma vez que possui um amplo conjunto de recursos que oferece suporte a uma variedade de estilos de programação, o qual vamos explorar. Embora não exista uma forma única de se programar em Python, existe uma série de convenções compartihadas na comunidade de desenvolvedores que facilitam a leitura, compreensão e a extensão de programas existentes. A combinação de flexibilidade e acessibilidade do Python permite aos estudantes explorarem vários paradigmas de programação e, assim, aplicarem o conhecimento adquirido para milhares de projetos em andamento.
+
+Estas notas mantém o espírito do SICP, introduzindo os recursos do Python com as técnicas de abstração e um rigoroso modelo computacional. Em acréscimo, estas notas fornecem uma introdução prática à programação em Python, incluindo alguns recursos avançados da linguagem e exemplos ilustrativos. O aumento da sua facilidade com o Python deve vir naturalmente conforme você avança no texto. 
+
+O melhor caminho para começar à programação em Python é interagindo com o interpretador diretamente. Essa seção descreve como instalar o Python 3, iniciar uma sessão interativa com o interpretador e começar a programar.
 
 ## 1.2 Elementos da programação
 ## 1.3 Definindo novas funções
