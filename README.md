@@ -75,6 +75,28 @@ Estas notas mantém o espírito do SICP, introduzindo os recursos do Python com 
 
 O melhor caminho para começar à programação em Python é interagindo com o interpretador diretamente. Essa seção descreve como instalar o Python 3, iniciar uma sessão interativa com o interpretador e começar a programar.
 
+
+### 1.1.2 Instalando Python 3
+Como todo grande software, o Python possui várias versões. Este texto vai utilizar a versão estável mais recente do Python 3. Vários computadores possuem versões antigas do Python já instaladas como o Python 2.7, mas essas versões não vão corresponder as descrições deste texto. Você deve ser capaz de utilizar qualquer computador, mas espera-se a instalação do Python 3. (não se preocupe, Python é gratuito).
+
+Você pode baixar o Python 3 na página de download clicando na versão que começa com 3 (não 2). Siga as instruções do instalador para completá-lo.
+
+Para um guia mais detalhado, tente estes tutoriais de instalação no Windows e no Mac, criados pela Julia Oh.
+
+
+
+
+
+1.1.3   Interactive Sessions
+In an interactive Python session, you type some Python code after the prompt, >>>. The Python interpreter reads and executes what you type, carrying out your various commands.
+
+To start an interactive session, run the Python 3 application. Type python3 at a terminal prompt (Mac/Unix/Linux) or open the Python 3 application in Windows.
+
+If you see the Python prompt, >>>, then you have successfully started an interactive session. These notes depict example interactions using the prompt, followed by some input.
+
+>>> 2 + 2
+4
+Interactive controls. Each session keeps a history of what you have typed. To access that history, press <Control>-P (previous) and <Control>-N (next). <Control>-D exits a session, which discards this history. Up and down arrows also cycle through history on some systems.
 ## 1.2 Elementos da programação
 ## 1.3 Definindo novas funções
 ## 1.4 Elaborando funções
