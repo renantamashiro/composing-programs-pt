@@ -84,19 +84,22 @@ Você pode baixar o Python 3 na página de download clicando na versão que come
 Para um guia mais detalhado, tente estes tutoriais de instalação no Windows e no Mac, criados pela Julia Oh.
 
 
+### Sessoes interativas
 
+Em uma sessão interativa de Python, você digita algum código Python após o _prompt_ _>>>_. O interpretador do Python lê e executa o que você digitou, executando seus vários comandos.
 
+Para iniciar uma sessão interativa, rode a aplicação Python 3. Digite `python3` no _prompt_ do terminal (Mac/Unix/Linux) ou abra a aplicação Python 3 no Windows.
 
-1.1.3   Interactive Sessions
-In an interactive Python session, you type some Python code after the prompt, >>>. The Python interpreter reads and executes what you type, carrying out your various commands.
+Se você ver o _prompt_ do Python (_>>>_), então você iniciou com sucesso uma sessão interativa. Estas notas mostram interações de exemplo utilizando o _prompt_, seguido de alguma entrada.
 
-To start an interactive session, run the Python 3 application. Type python3 at a terminal prompt (Mac/Unix/Linux) or open the Python 3 application in Windows.
-
-If you see the Python prompt, >>>, then you have successfully started an interactive session. These notes depict example interactions using the prompt, followed by some input.
-
+```
 >>> 2 + 2
 4
-Interactive controls. Each session keeps a history of what you have typed. To access that history, press <Control>-P (previous) and <Control>-N (next). <Control>-D exits a session, which discards this history. Up and down arrows also cycle through history on some systems.
+```
+
+**Controles interativos**. Cada sessão mantêm um histórico do que foi digitado. Para acessar esse histórico, pressione `<Control>-P` (anterior) e `<Control>-N` (próximo). `<Control>-D` sai de uma sessão, o qual descarta todo o histórico. As setas para cima e para baixo também percorrem o histórico para alguns sistemas.
+
+
 ## 1.2 Elementos da programação
 ## 1.3 Definindo novas funções
 ## 1.4 Elaborando funções
