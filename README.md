@@ -100,6 +100,38 @@ Se você ver o _prompt_ do Python (_>>>_), então você iniciou com sucesso uma 
 **Controles interativos**. Cada sessão mantêm um histórico do que foi digitado. Para acessar esse histórico, pressione `<Control>-P` (anterior) e `<Control>-N` (próximo). `<Control>-D` sai de uma sessão, o qual descarta todo o histórico. As setas para cima e para baixo também percorrem o histórico para alguns sistemas.
 
 
+### 1.1.4 Primeiro Exemplo
+
+Para dar uma introdução apropriada ao Python, nós vamos começar com um exemplo que utiliza diversos recursos da linguagem. Na próxima seção, começaremos do começo e comstruiremos a linguagem pedaço por pedaço. Pense nessa seção como uma prévia dos recursos que virão.
+
+O Python possui suporte nativo para várias atividades comuns de programação, como: manipulação de texto, gráficos, comunicação na internet. O seguinte trecho de código Python:
+
+```python
+from urllib.request import urlopen
+```
+
+é uma sentença de importe que carrega a funcionalidade para acessar dados provenientes da internet. Em particular, deixa disponível 
+
+
+
+
+
+Python has built-in support for a wide range of common programming activities, such as manipulating text, displaying graphics, and communicating over the Internet. The line of Python code
+
+>>> from urllib.request import urlopen
+is an import statement that loads functionality for accessing data on the Internet. In particular, it makes available a function called urlopen, which can access the content at a uniform resource locator (URL), a location of something on the Internet.
+
+Statements & Expressions. Python code consists of expressions and statements. Broadly, computer programs consist of instructions to either
+
+Compute some value
+Carry out some action
+Statements typically describe actions. When the Python interpreter executes a statement, it carries out the corresponding action. On the other hand, expressions typically describe computations. When Python evaluates an expression, it computes the value of that expression. This chapter introduces several types of statements and expressions.
+
+The assignment statement
+
+>>> shakespeare = urlopen('http://composingprograms.com/shakespeare.txt')
+associates the name shakespeare with the value of the expression that follows =. That expression applies the urlopen function to a URL that contains the complete text of William Shakespeare's 37 plays, all in a single text document.
+
 ## 1.2 Elementos da programação
 ## 1.3 Definindo novas funções
 ## 1.4 Elaborando funções
