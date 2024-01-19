@@ -110,27 +110,23 @@ O Python possui suporte nativo para várias atividades comuns de programação, 
 from urllib.request import urlopen
 ```
 
-é uma sentença de importe que carrega a funcionalidade para acessar dados provenientes da internet. Em particular, deixa disponível 
+é uma sentença de importe que carrega a funcionalidade para acessar dados provenientes da internet. Em particular, deixa disponível a função chamada `urlopen` a qual pode acessar o conteúdo em um localizador uniforme de recurso (URL), uma localização de algo na internet.
 
+**Sentenças e Expressões**. Código Python consiste de expressões e sentenças. Em termos gerais, programas de computadores consistem em instruções para:
 
+1. Calcular algum valor
+2. Realizar alguma ação
 
+Sentenças normalmente descrevem ações. Quando o interpretador do Python executa uma sentença, ele realiza a ação correspondente. Por outro lado, expressões normalmente descrevem cálculos. Quando o Python avalia uma expressão, ele calcula o valor da expressão. Este capítulo introduz diversos tipos de sentenças e expressões.
 
+A declaração da sentença:
 
-Python has built-in support for a wide range of common programming activities, such as manipulating text, displaying graphics, and communicating over the Internet. The line of Python code
+```python
+shakespeare = urlopen('http://composingprograms.com/shakespeare.txt')
+```
 
->>> from urllib.request import urlopen
-is an import statement that loads functionality for accessing data on the Internet. In particular, it makes available a function called urlopen, which can access the content at a uniform resource locator (URL), a location of something on the Internet.
+associa o nome `shakespeare` com o valor da expressão que segue o sinal de igual `=`. Essa expressão aplica a função `urlopen` para a URL que contêm o texto completo das 37 peças de William Shakespeare, tudo em um único documento de texto.
 
-Statements & Expressions. Python code consists of expressions and statements. Broadly, computer programs consist of instructions to either
-
-Compute some value
-Carry out some action
-Statements typically describe actions. When the Python interpreter executes a statement, it carries out the corresponding action. On the other hand, expressions typically describe computations. When Python evaluates an expression, it computes the value of that expression. This chapter introduces several types of statements and expressions.
-
-The assignment statement
-
->>> shakespeare = urlopen('http://composingprograms.com/shakespeare.txt')
-associates the name shakespeare with the value of the expression that follows =. That expression applies the urlopen function to a URL that contains the complete text of William Shakespeare's 37 plays, all in a single text document.
 
 ## 1.2 Elementos da programação
 ## 1.3 Definindo novas funções
