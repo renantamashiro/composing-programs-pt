@@ -127,6 +127,37 @@ shakespeare = urlopen('http://composingprograms.com/shakespeare.txt')
 
 associa o nome `shakespeare` com o valor da expressão que segue o sinal de igual `=`. Essa expressão aplica a função `urlopen` para a URL que contêm o texto completo das 37 peças de William Shakespeare, tudo em um único documento de texto.
 
+**Funções**. Funções encapsula lógica que manipula dados. `urlopen` é uma função. Um endereço Web é um pedaço de dados e o texto das peças de Shakespeare é outro. Mas nós podemos aplicar esse processo utilizando somente uma simples expressão, uma vez que a complexidade dessa operação é tratada pela função. Funções é o principal tópico deste capítulo.
+
+Outra sentença de atribuição
+
+```python
+words = set(Shakespeare.read().decode().split())
+
+```
+
+associa o nome `words` para o conjunto de todas as palavras únicas que aparecem nas peças de Shakespeare, todas as 33.721. A corrente de comandos para ler, decodificar e separar operam em uma entidade computacional intermediária: nós lemos o dado da URL aberta, então decidi ficamos o dado para texto e finalmente separamos o texto em palavras. Todas essas palavras são organizadas no conjunto.
+
+**Objetos**. O conjunto é um tipo de objeto, o qual suporta operações de conjunto como cálculo de interseção e união.
+
+
+
+
+
+
+
+Objects. A set is a type of object, one that supports set operations like computing intersections and membership. An object seamlessly bundles together data and the logic that manipulates that data, in a way that manages the complexity of both. Objects are the primary topic of Chapter 2. Finally, the expression
+
+>>> {w for w in words if len(w) == 6 and w[::-1] in words}
+{'redder', 'drawer', 'reward', 'diaper', 'repaid'}
+is a compound expression that evaluates to the set of all Shakespearian words that are simultaneously a word spelled in reverse. The cryptic notation w[::-1] enumerates each letter in a word, but the -1 dictates to step backwards. When you enter an expression in an interactive session, Python prints its value on the following line.
+
+Interpreters. Evaluating compound expressions requires a precise procedure that interprets code in a predictable way. A program that implements such a procedure, evaluating compound expressions, is called an interpreter. The design and implementation of interpreters is the primary topic of Chapter 3.
+
+When compared with other computer programs, interpreters for programming languages are unique in their generality. Python was not designed with Shakespeare in mind. However, its great flexibility allowed us to process a large amount of text with only a few statements and expressions.
+
+In the end, we will find that all of these core concepts are closely related: functions are objects, objects are functions, and interpreters are instances of both. However, developing a clear understanding of each of these concepts and their role in organizing code is critical to mastering the art of programming.
+
 
 ## 1.2 Elementos da programação
 ## 1.3 Definindo novas funções
