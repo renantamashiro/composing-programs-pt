@@ -138,25 +138,44 @@ words = set(Shakespeare.read().decode().split())
 
 associa o nome `words` para o conjunto de todas as palavras únicas que aparecem nas peças de Shakespeare, todas as 33.721. A corrente de comandos para ler, decodificar e separar operam em uma entidade computacional intermediária: nós lemos o dado da URL aberta, então decidi ficamos o dado para texto e finalmente separamos o texto em palavras. Todas essas palavras são organizadas no conjunto.
 
-**Objetos**. O conjunto é um tipo de objeto, o qual suporta operações de conjunto como cálculo de interseção e união.
+**Objetos**. O conjunto é um tipo de objeto, o qual suporta operações de conjunto como cálculo de interseção e união. Um objeto agrupa de forma transparente dados e a lógica que manipula esses dados, de modo que gerencia a complexidade de ambos. Objetos são o tópico principal do Capítulo 2. Finalmente, a expressão 
 
-
-
-
-
-
-
-Objects. A set is a type of object, one that supports set operations like computing intersections and membership. An object seamlessly bundles together data and the logic that manipulates that data, in a way that manages the complexity of both. Objects are the primary topic of Chapter 2. Finally, the expression
-
->>> {w for w in words if len(w) == 6 and w[::-1] in words}
+```python
+{w for w in word if len(w) == 6 and w[::-1] in words}
 {'redder', 'drawer', 'reward', 'diaper', 'repaid'}
-is a compound expression that evaluates to the set of all Shakespearian words that are simultaneously a word spelled in reverse. The cryptic notation w[::-1] enumerates each letter in a word, but the -1 dictates to step backwards. When you enter an expression in an interactive session, Python prints its value on the following line.
+```
+é uma expressão composta que avalia para o conjunto de todas as palavras Shakespearianas que também são uma palavra caso soletrada ao contrário. A notação enigmática `w[::-1]` avalia cada letra em uma palavra, mas o `-1` manda dar um passo para trás. Quando você digita uma expressão em uma sessão interativa, o Python exibe o valor da expressão na linha seguinte.
 
-Interpreters. Evaluating compound expressions requires a precise procedure that interprets code in a predictable way. A program that implements such a procedure, evaluating compound expressions, is called an interpreter. The design and implementation of interpreters is the primary topic of Chapter 3.
+**Interpretadores**: Avaliar expressões compostas requer um procedimento preciso que interpreta código de um modo previsível. Um programa que implementa este tipo de procedimento, avaliando expressões compostas, é chamado de um interpretador. O design e implementação de interpretadores é o principal tópico do Cappítulo 3.
 
-When compared with other computer programs, interpreters for programming languages are unique in their generality. Python was not designed with Shakespeare in mind. However, its great flexibility allowed us to process a large amount of text with only a few statements and expressions.
+Quando comparado com outros programas de computadores, interpretadores para linguagens de programação são únicos em sua generalização. Python não foi construído com Shakespeare em mente. No entanto, sua grande flexibilidade nos permitiu processar uma grande quantidade de texto com poucas sentenças e expressões.
 
-In the end, we will find that all of these core concepts are closely related: functions are objects, objects are functions, and interpreters are instances of both. However, developing a clear understanding of each of these concepts and their role in organizing code is critical to mastering the art of programming.
+No final, nós vamos achar que todos estes conceitos centrais são extremamente relacionados: funções são objetos, objetos são funções e interpretadores são instâncias de ambos. No entanto, desenvolver um entendimento claro de cada um desses conceitos e seus pápeis na organização do código é crítico para dominar a arte da programação.
+
+### 1.1.5 Erros
+
+Python está esperando pelo seu comando. Você está encorajado de experimentar a linguagem, mesmo sem saber todo o seu vocabulário e estrutura. Mas, esteja preparado para erros. Apesar de computadores serem rápidos e flexíveis, eles são extremamente rígidos. A natureza dos computadores está descrita no curso introdutório da Universidade de Stanford como:
+
+A equação fundamental de computadores é:
+
+computador = poderoso + estúpido
+
+Os computadores são muito poderosos, processando altos volumes de dados bem rapidamente. Os computadores podem processar bilhões de operações por segundo, em que cada operação é bastante simples.
+
+Os computadores são também chocantemente estúpidos e frágeis. As operações que eles conseguem fazer são extremamente rígidos, simples e mecânicos. O computador não tem um entendimento real... não é nada como o HAL 9000 dos filmes. No mínimo, você não deve ficar intimidado por um computador como se ele tivesse algum tipo de cérebro. É muito mecânico por baixo de tudo.
+
+Programação é sobre a pessoa utilizar seu conhecimento real para construir algo útil, construído a partir dessas pequenas e simples operações que o computador pode fazer.
+
+A rigidez dos computadores ficarão aparentes conforme você utilizar o interpretador do Python: até mesmo pequenos mudanças de ortografia e formatação vão causar inesperadas saídas e erros.
+
+Aprender a interpretar erros e diagnosticar a causa de erros inesperados é chamado de depuração. Alguns princípios orientadores de depuração são:
+
+1. Testar de forma incremental: Todo código bem escrito é composto de pequenos componentes modulares que podem ser testados individualmente. Teste tudo que você escreve o mais cedo possível para identificar problemas o quanto antes e ganhe confiança de seus componentes.
+2. Isolar erros: Um erro em uma saída de uma sentença pode tipicamente ser atribuído para um componente modular específico. Quando tentar diagnosticar um problema, trace o erro para o menor fragmento de código antes de corrigí-lo.
+3. Verifique as suas hipóteses: Interpretadores executam as suas instruções ao pé da letra - sem mais nem menos. A sua saída é inesperada quando o comportamento de algum código não corresponde ao o que o programador esperava (ou assumiu). Conheça as suas hipóteses e então foque o esforço da sua depuração em verificar que as suas hipóteses se mantêm.
+4. Consulte outras pessoas: Você não está sozinho! Se você não entender uma mensagem de erro, pergunte para um amigo, instrutor ou no mecanismo de busca. Se você isolou um erro, mas não consegue descobrir como corrigí-lo, pergunte para alguém para dar uma olhada. Um monte de conhecimento valioso de programação é compartilhado em um processo de resolução de problemas em grupo.
+
+Teste incremental, design modular, hipóteses precisas e trabalho em equipe são temas que persistem neste texto. Espera-se que todos persistam na sua carreira em ciência da computação.
 
 
 ## 1.2 Elementos da programação
