@@ -179,6 +179,40 @@ Teste incremental, design modular, hipóteses precisas e trabalho em equipe são
 
 
 ## 1.2 Elementos da programação
+
+Um linguagem de programação é mais que apenas um meio de instruir um computador a executar tarefas. A linguagem também serve como uma estrutura em que organizamos nossas ideias sobre processos computacionais. Programas servem para comunicar essas ideias entre os membros de uma comunidade de programação. Assim, os programas devem ser escritos para pessoas lerem e incidentalmente para máquinas executarem.
+
+Quando descrevemos uma linguagem, devemos prestar atenção nos significados que a liguagem providencia para combinar simples ideias para formar ideias mais complexas. Toda linguagem poderosa possui três mecanismos:
+
+* expressões e sentenças primitivas, os quais representam os blocos de construção mais simples que a linguagem fornece,
+* meio de combinação, pelo qual elementos compostos são construídos a partir de outros mais simples, e
+* meio de abstração, pelo qual elementos compostos podem ser nomeados e manipulados como unidades.
+
+Na programação, lidamos com dois tipos de elementos: funções e dado. (Em breve descobriremos que realmente eles não são tão distintos) Informalmente, dado é algo que queremos manipular e funções descrevem as regras para manipular o dado. Dessa forma, qualquer linguagem de programação poderosa deve ser capaz de descrever dados e funções primitivas, bem como ter alguns métodos para combinar e abstrair funções e dados.
+
+### 1.2.1 Expressões
+
+Tendo experimentado o interpretador do Python na seção anterior, vamos começar de novo, desenvolvendo metodicamente elemento por elemento da linguagem. Seja paciente se os exemplos parecem simplistas - material mais interessante estará disponível em breve.
+
+Começaremos com expressões primitivas. Um tipo de expressão primitivo é um número. Mais precisamente, a expressão que você digita consiste em numerais que representam o número na base 10.
+
+```
+>>> 42
+```
+
+Expressões que representam números podem ser combinados com operadores matemáticos para formar uma expressão composta, o qual o interpretador avaliará:
+
+```
+>>> -1 - -1
+0
+
+>>> 1/2 + 1/4 + 1/8 + 1/16 + 1/32 + 1/64 + 1/128
+0.9921875
+```
+
+Essas expressões matemáticas usam a notação infixa, onde o operador (e.g., +, -, * ou /) aparece entre os operandos (números). O Python inclui diferentes maneiras de formar uma expressão composta. Em vez de tentar enumerar todos imediatamente, vamos introduzir novas formas de expressões à medidas que avançamos, junto com os recursos que a linguagem suporta.
+
+
 ## 1.3 Definindo novas funções
 ## 1.4 Elaborando funções
 ## 1.5 Controle
