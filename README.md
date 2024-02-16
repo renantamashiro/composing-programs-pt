@@ -212,6 +212,10 @@ Expressões que representam números podem ser combinados com operadores matemá
 
 Essas expressões matemáticas usam a notação infixa, onde o operador (e.g., +, -, * ou /) aparece entre os operandos (números). O Python inclui diferentes maneiras de formar uma expressão composta. Em vez de tentar enumerar todos imediatamente, vamos introduzir novas formas de expressões à medidas que avançamos, junto com os recursos que a linguagem suporta.
 
+### 1.2.2 Expressões de chamada
+
+O tipo mais importante de expressão composta é uma expressão de chamada que aplica uma função para alguns argumentos. Lembra a noção matemática de que uma função é um mapeamento de argumentos de entrada para um valor de saída. Por exemplo, a função máximo mapeia suas entradas para uma única saída. O caminho em que o Python expressa a função da aplicação é o mesmo em matemática convencional.
+
 
 ## 1.3 Definindo novas funções
 ## 1.4 Elaborando funções
