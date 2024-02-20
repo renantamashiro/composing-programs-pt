@@ -216,6 +216,29 @@ Essas expressões matemáticas usam a notação infixa, onde o operador (e.g., +
 
 O tipo mais importante de expressão composta é uma expressão de chamada que aplica uma função para alguns argumentos. Lembra a noção matemática de que uma função é um mapeamento de argumentos de entrada para um valor de saída. Por exemplo, a função máximo mapeia suas entradas para uma única saída. O caminho em que o Python expressa a função da aplicação é o mesmo em matemática convencional.
 
+```
+>>> max(7.5, 9.5)
+9.5
+```
+
+Essa chamada de expressão possui sub expressões: o operador é uma expressão que procede os parênteses que possuem uma lista delimitada por vírgula de operandos de expressões.
+
+O operador específica uma função. Quando essa chamada de expressão é avaliada, nós fizemos que a função máximo é chamada com argumentos 7.5 e 9.5 e retorna o valor de 9.5.
+
+A ordem desses argumentos em uma chamada de expressão importa. Por exemplo, a função `pow` eleva seu primeiro argumento para potência de seu segundo argumento.
+
+```
+>>> pow(100, 2)
+10000
+>>> pow(2, 100)
+1267650600228229401496703205376
+```
+
+A notação de função possui três principais vantagens com relação a convenção matemática da notação infixa. Primeiro, 
+
+
+
+
 
 ## 1.3 Definindo novas funções
 ## 1.4 Elaborando funções
