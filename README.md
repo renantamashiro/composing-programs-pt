@@ -214,11 +214,10 @@ Essas expressões matemáticas usam a notação infixa, onde o operador (e.g., +
 
 ### 1.2.2 Expressões de chamada
 
-O tipo mais importante de expressão composta é uma expressão de chamada que aplica uma função para alguns argumentos. Lembra a noção matemática de que uma função é um mapeamento de argumentos de entrada para um valor de saída. Por exemplo, a função máximo mapeia suas entradas para uma única saída. O caminho em que o Python expressa a função da aplicação é o mesmo em matemática convencional.
+O tipo mais importante de expressão composta é uma expressão de chamada que aplica uma função para alguns argumentos. Lembra a noção matemática de que uma função é um mapeamento de argumentos de entrada para um valor de saída. Por exemplo, a função `max` mapeia suas entradas para uma única saída. O caminho em que o Python expressa a função da aplicação é o mesmo em matemática convencional.
 
-```
->>> max(7.5, 9.5)
-9.5
+```python
+max(7.5, 9.5) // -> 9.5
 ```
 
 Essa chamada de expressão possui sub expressões: o operador é uma expressão que procede os parênteses que possuem uma lista delimitada por vírgula de operandos de expressões.
@@ -234,8 +233,23 @@ A ordem desses argumentos em uma chamada de expressão importa. Por exemplo, a f
 1267650600228229401496703205376
 ```
 
-A notação de função possui três principais vantagens com relação a convenção matemática da notação infixa. Primeiro, 
+A notação de função possui três principais vantagens com relação a convenção matemática da notação infixa. Primeiro, as funções podem receber um número arbitrário de argumentos:
 
+```python
+max(1, -2, 3, -4) // -> 3
+```
+
+Nenhum ambiguidade pode surgir, uma vez que o nome da função sempre precede seus argumentos.
+
+Segundo, a notação de função se estende de modo direto para expressões aninhadas, onde os elementos são eles próprios expressões compostas. Em chamadas de expressões aninhadas, diferente de expressões infixas compostas, a estrutura do aninhamento é inteiramente explícita dentro dos parênteses.
+
+```python
+max(min(1, -2), min(pow(3, 5), -4)) // -> -2
+```
+
+Não existe limite (em princípio) da profundidade do aninhamento e da complexidade geral das expressões que o interpretador do Python pode avaliar. No entanto, humanos rapidamente ficam confusos por um aninhamento multinível. Um importante papel seu como programador é estruturar expressões que permaneçam interpretáveis para você, para seus colegas de programação e outras pessoas que podem ler as suas expressões no futuro.
+
+Terceiro, a notação matemática possui uma grande variedade de formas: multiplicação aparece entre termos, expoentes aparecem como sobrescritos, divisão como uma barra horizontal e raiz quadrada como um telhado com revestimento inclinado. Algumas dessas notações são bem difíceis de escrever! Mas, toda essa complexidade pode ser unificada por meio da notação de chamada de expressões. Embora o Python suporte operadores matemáticos comuns usando notação infixa (como + e -), qualquer operador pode ser expresso por uma função com um nome.
 
 
 
