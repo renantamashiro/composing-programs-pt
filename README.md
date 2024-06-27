@@ -251,7 +251,27 @@ Não existe limite (em princípio) da profundidade do aninhamento e da complexid
 
 Terceiro, a notação matemática possui uma grande variedade de formas: multiplicação aparece entre termos, expoentes aparecem como sobrescritos, divisão como uma barra horizontal e raiz quadrada como um telhado com revestimento inclinado. Algumas dessas notações são bem difíceis de escrever! Mas, toda essa complexidade pode ser unificada por meio da notação de chamada de expressões. Embora o Python suporte operadores matemáticos comuns usando notação infixa (como + e -), qualquer operador pode ser expresso por uma função com um nome.
 
+### 1.2.3 Importação de funções de bibliotecas
 
+O Python define uma grande variedade de funções, incluindo o operador de funções mencionado na seção anterior, mas a linguagem não deixa todos os nomes disponíveis por padrão. Em vez disso, organiza
+
+Python defines a very large number of functions, including the operator functions mentioned in the preceding section, but does not make all of their names available by default. Instead, it organizes the functions and other quantities that it knows about into modules, which together comprise the Python Library. To use these elements, one imports them. For example, the math module provides a variety of familiar mathematical functions:
+
+>>> from math import sqrt
+>>> sqrt(256)
+16.0
+and the operator module provides access to functions corresponding to infix operators:
+
+>>> from operator import add, sub, mul
+>>> add(14, 28)
+42
+>>> sub(100, mul(7, add(8, 4)))
+16
+An import statement designates a module name (e.g., operator or math), and then lists the named attributes of that module to import (e.g., sqrt). Once a function is imported, it can be called multiple times.
+
+There is no difference between using these operator functions (e.g., add) and the operator symbols themselves (e.g., +). Conventionally, most programmers use symbols and infix notation to express simple arithmetic.
+
+The Python 3 Library Docs list the functions defined by each module, such as the math module. However, this documentation is written for developers who know the whole language well. For now, you may find that experimenting with a function tells you more about its behavior than reading the documentation. As you become familiar with the Python language and vocabulary, this documentation will become a valuable reference source.
 
 
 ## 1.3 Definindo novas funções
