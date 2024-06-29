@@ -253,26 +253,30 @@ Terceiro, a notação matemática possui uma grande variedade de formas: multipl
 
 ### 1.2.3 Importação de funções de bibliotecas
 
-O Python define uma grande variedade de funções, incluindo o operador de funções mencionado na seção anterior, mas a linguagem não deixa todos os nomes disponíveis por padrão. Em vez disso, organiza
+O Python define uma grande variedade de funções, incluindo o operador de funções mencionado na seção anterior, mas a linguagem não deixa todos os nomes disponíveis por padrão. Em vez disso, organiza as funções e outras quantidades que conhece em módulos que juntos compreendem a Biblioteca Python. Para usar esses elementos, basta importá-los. Por exemplo, o módulo `math` fornece uma variedade de funções matemáticas bem familiares:
 
-Python defines a very large number of functions, including the operator functions mentioned in the preceding section, but does not make all of their names available by default. Instead, it organizes the functions and other quantities that it knows about into modules, which together comprise the Python Library. To use these elements, one imports them. For example, the math module provides a variety of familiar mathematical functions:
+```python
+from math import sqrt
+sqrt(256)
+// 16.0
+```
 
->>> from math import sqrt
->>> sqrt(256)
-16.0
-and the operator module provides access to functions corresponding to infix operators:
+e o módulo `operator` fornece acesso a funções correspondentes a operadores infixos:
 
->>> from operator import add, sub, mul
->>> add(14, 28)
-42
->>> sub(100, mul(7, add(8, 4)))
-16
-An import statement designates a module name (e.g., operator or math), and then lists the named attributes of that module to import (e.g., sqrt). Once a function is imported, it can be called multiple times.
+```python
+from operator import add, sub, mul
+add(14, 28)
+// 42
 
-There is no difference between using these operator functions (e.g., add) and the operator symbols themselves (e.g., +). Conventionally, most programmers use symbols and infix notation to express simple arithmetic.
+sub(100, mul(7, add(8, 4)))
+// 16
+```
 
-The Python 3 Library Docs list the functions defined by each module, such as the math module. However, this documentation is written for developers who know the whole language well. For now, you may find that experimenting with a function tells you more about its behavior than reading the documentation. As you become familiar with the Python language and vocabulary, this documentation will become a valuable reference source.
+Uma declaração de importação designa um nome do módulo (operator, math) e então lista os atributos nomeados desse módulo para importar (sqrt). Uma vez que a função é importada ela pode ser chamada múltiplas vezes.
 
+Não existe diferença entre usar essas funções de operadores (add, sub, mul) e os seus respectivos símbolos (+, -, *). Convencionalmente, a maioria dos programadores utilizam símbolos e notação infixa para expressar aritmética simples.
+
+A Documentação da Biblioteca do Python 3 lista as funçoes definidas por cada módulo, como o módulo `math`. No entanto, essa documentação é escrita por desenvolvedores que conhecem muito bem a linguagem como um todo. Por enquanto, você talvez ache que experimentar a função lhe dirá mais sobre o seu comportamento do que ler a documentação. Conforme você for ganhando familiaridade com a linguagem Python e seu vocabulário, essa documentação se tornará uma fonte de referência valiosa.
 
 ## 1.3 Definindo novas funções
 ## 1.4 Elaborando funções
