@@ -278,6 +278,15 @@ Não existe diferença entre usar essas funções de operadores (add, sub, mul) 
 
 A Documentação da Biblioteca do Python 3 lista as funçoes definidas por cada módulo, como o módulo `math`. No entanto, essa documentação é escrita por desenvolvedores que conhecem muito bem a linguagem como um todo. Por enquanto, você talvez ache que experimentar a função lhe dirá mais sobre o seu comportamento do que ler a documentação. Conforme você for ganhando familiaridade com a linguagem Python e seu vocabulário, essa documentação se tornará uma fonte de referência valiosa.
 
+### 1.2.4 Nomes e o ambiente 
+Um aspecto crítico de uma linguagem de programação é o significado fornecido para os nomes se referirem aos objetos computacionais. Se um valor
+
+
+1.2.4   Names and the Environment
+Video: Show Hide
+A critical aspect of a programming language is the means it provides for using names to refer to computational objects. If a value has been given a name, we say that the name binds to the value.
+
+In Python, we can establish new bindings using the assignment statement, which contains a name to the left of = and a value to the right:
 ## 1.3 Definindo novas funções
 ## 1.4 Elaborando funções
 ## 1.5 Controle
