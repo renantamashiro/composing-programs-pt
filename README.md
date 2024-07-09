@@ -284,9 +284,25 @@ Um aspecto crítico de uma linguagem de programação é o significado fornecido
 Em Python, nós podemos estabelecer novos vínculos utilizando a declaração de atribuição que possui um nome a esquerda do sinal de igual `=` e um valor a direita:
 
 ```python
-name = 'value'
+radius = 10
+radius
+// 10
+
+2 * radius
+20
 
 ```
+
+Nomes podem também estar vinculados por meio de  declarações de importações.
+
+```python
+from math import pi
+pi * 71 /223
+# 1.0002380197528042
+
+```
+
+O símbolo `=` é chamado o operador de atribuição em Python (entre outras linguagens).  Atribuição é o significado mais simples de abstração, uma vez que nos permite usar nomes simples para referenciar os resultados de operações compostas, como o cálculo de área no exemplo anterior. Nesse sentido, programas complexos são construídos passo a passo por objetos computacionais que aumentam a complexidade.
 
 
 ## 1.3 Definindo novas funções
